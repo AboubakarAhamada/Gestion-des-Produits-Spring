@@ -7,7 +7,7 @@
 Une application web de gestion des produits basée sur       
 Java et le Framework Spring Boot.							 
 
-# Fonctionaalités :
+# Fonctionalités :
 
 C'est une application simple qui permet de réaliser des opérations
 CRUD (Create, Retrive, Update,Delete) sur un ensemble des éléments que 
@@ -23,6 +23,7 @@ les opérations qui lui sont autorisées.
  4. Dans le package com.aboubakar.security : il y a la classe SecurityConfig
  
 # Technologies utilisées :
+- Java 
 - Spring Web 
 - Spring Data JPA 
 - Spring Security
