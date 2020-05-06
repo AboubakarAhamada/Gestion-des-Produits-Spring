@@ -3,11 +3,11 @@
 # Date : 06/05/2020											 
 # Lieu : Casablanca											 
 
-#PROJET 
+# PROJET 
 Une application web de gestion des produits basé sur       
 Java et le Framework Spring Boot.							 
 
-#Fonctionaalités
+# Fonctionaalités
 
 C'est une application simple qui permet de réaliser des opérations
 CRUD (Create, Retrive, Update,Delete) sur un ensemble des éléments que 
@@ -15,7 +15,7 @@ j'ai nommés prouits qui sont dans une base de données.
 Un utilisateur se connecte, et selon ces droit, il peut effectuer 
 les opérations qui lui sont autorisées. 
 
-#En résumé : 
+# En résumé : 
 
 - Cette application va couvrir l'ajout, la consulatation, la suppression, la modification
 des produits selon des droits.
@@ -23,7 +23,7 @@ des produits selon des droits.
 - La personne connectée, son nom est affiché sur la barde de menu.
 - Il y a l'option pour se deconnecter.
 
-#Technologies utilisées:
+# Technologies utilisées:
 
 Dans cette pétite application basée sur le framework Spring boot, j'ai utilisé
 différents modules de Spring notament : Spring JPA, Spring Security et bien
@@ -32,7 +32,7 @@ Pour la base de données, c'est le SGBD MySQL qui est utilisé.
 Pour la partie Front end, j'ai utilisé  le moteur de templète Thymeleaf
 accompagné de Bootstap 3 et un peu du css pour le design. 
 
-#Ce que j'ai appris:
+# Ce que j'ai appris:
 
 Avant je voyais Spring comme un casse-tête et je ne voyais pas son intêret 
 vu qu'il y a le Servlet, JSP, etc. D'ailleurs, je vous invite à vister 
