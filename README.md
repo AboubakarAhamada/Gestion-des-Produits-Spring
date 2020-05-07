@@ -26,7 +26,6 @@ les opérations qui lui sont autorisées.
 - Java 
 - Spring Web 
 - Spring Data JPA 
-- Spring Security
 - SGBD : MySQL. 
 - UI : Thymeleaf, Bootstrap 3
 
