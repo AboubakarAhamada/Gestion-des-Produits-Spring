@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Produits</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootsrap.min.css"
+	th:href="@{css/bootstrap.min.css}" />
+</head>
+<body>
+	<!--  On insere du fragment header du fichier header.html ici -->
+	<div th:insert="header::header"></div>
+
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Liste des produits</div>
+			<div class="panel-body">
+				<form action="chercher" method="get">
+					<label>Mot clé : </label> <input type="text" name="motCle" value=""
+						style="height: 34px" placeholder="Entrer un mot clé"/>
+					<button type="submit" class="btn btn-primary">Afficher les
+						produits</button>
+				</form>
+				<h3>Liste des produits présents</h3>
+				<hr>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<td>ID</td>
+							<td>Désignation</td>
+							<td>Prix</td>
+							<td>Quantité</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="p:${pageProduits}">
+							<td th:text="${p.id}"></td>
+							<td th:text="${p.designation}"></td>
+							<td th:text="${p.prix}"></td>
+							<td th:text="${p.quantite}"></td>
+							<td><a th:href="@{edit(id=${p.id})}"><span
+									class="glyphicon glyphicon-pencil"></span></a></td>
+							<td><a
+								th:href="@{delete(id=${p.id},page=${pageCourante},size=${size})}
+					 "
+								onclick="return confirm('Etes-vous sure de vouloir supprimer cet élément?')
+					 "><span
+									class="glyphicon glyphicon-trash"></span></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li th:class="${pageCourante==status.index?'active':''}"
+						th:each="page,status:${pages}"><a
+						th:href="@{chercher(page=${status.index},size=${size})}"
+						th:text="${status.index}"></a></li>
+				</ul>
+				<br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

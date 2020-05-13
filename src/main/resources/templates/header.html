@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<!-----------------------------------------------------
+<title>Produits</title>
+<link rel="stylesheet" type="text/css" href="css/bootsrap.min.css"
+	th:href="@{css/bootstrap.min.css}" />
+------------------------------------------------------->
+</head>
+<body>
+
+	<header th:fragment="header">
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="home">ProdManager</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="nouveau">Nouveau</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span>
+				<span th:text="${session.username}"></span></a></li>
+				<li><a href="logout"><span
+						class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>
