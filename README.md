@@ -26,7 +26,7 @@ plusieurs produits.
 
 # Structure de l'application :
  L'application est structurée en packages:
- 1. Dans le package com.aboubakar.entities : il y a la classe Produit. 
+ 1. Dans le package com.aboubakar.entities : il y a les entités Produit et User. 
  2. Dans la package com.aboubakar.dao: il y a l'interface ProduitRepository et UserRepository qui heritent de JpaRepository. 
  3. Dans le package com.aboubakar.web : il y a la classe ProuitControlleur. 
  
