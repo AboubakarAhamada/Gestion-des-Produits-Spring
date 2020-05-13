@@ -46,7 +46,7 @@ plusieurs produits.
  Voir une démo de l'application ici : https://github.com/AboubakarAhamada/Gestion-des-Produits-Spring/wiki 
  
 # Comment utiliser cette application ?
- Pour utiliser cette application, il suffit justede  modifier le fichier 'application.properties' pour
+ Pour utiliser cette application, il suffit juste de  modifier le fichier 'application.properties' pour
  mettre le nom de choix votre base de donnée et les coordonées d'accès à la base de données
  à savoir le 'username' et le 'password'. 
  
