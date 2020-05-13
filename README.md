@@ -24,6 +24,9 @@ Pour la recherche des produits par mot clé, le resultat est affiché dans des p
 on peut naviguer. Cela evite l'utilisateur de défiler la page dans le cas où la recherche renvoie 
 plusieurs produits.
 
+# Démo : 
+ Voir une démo de l'application ici : https://github.com/AboubakarAhamada/Gestion-des-Produits-Spring/wiki 
+ 
 # Structure de l'application :
  L'application est structurée en packages:
  1. Dans le package com.aboubakar.entities : il y a les entités Produit et User. 
@@ -42,9 +45,6 @@ plusieurs produits.
 - Gestion de dépendences : Maven
 - Autre : Spring Boot DevTools
 
-# Démo : 
- Voir une démo de l'application ici : https://github.com/AboubakarAhamada/Gestion-des-Produits-Spring/wiki 
- 
 # Comment utiliser cette application ?
  Pour utiliser cette application, il suffit juste de  modifier le fichier 'application.properties' pour
  mettre le nom de choix votre base de donnée et les coordonées d'accès à la base de données
